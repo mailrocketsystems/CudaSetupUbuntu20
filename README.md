@@ -20,7 +20,6 @@
    
    `sudo reboot`
 
-2. Reboot the system.
 
 # 2 cuDNN Installation:
 
