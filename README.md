@@ -62,6 +62,8 @@
 
 # 3 Installation Verification for cuDNN
 
+Install library `sudo apt-get install libfreeimage3 libfreeimage-dev`
+
 1. Copy the cuDNN samples to a writable path.
 
 
@@ -92,21 +94,9 @@
 
 # 4. PyTorch Installation
 
-1. Go to this link https://pytorch.org/get-started/locally/ and select the options as follows;
+`pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116`
 
-   PyTorch Build `Stable`
-
-   Your OS `Linux`
-   
-   Package `Pip`
-   
-   Language `Python`
-   
-   Compute Platform `CUDA 11.6`
-
-   Now copy the command in `Run this Command` section
-
-2. Reboot the system
+`sudo reboot`
 
 # 5 Verfiy PyTorch Installation:
 
