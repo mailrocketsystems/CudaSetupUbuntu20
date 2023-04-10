@@ -1,30 +1,17 @@
-#VM Setup
+# Follow below steps to setup cuda toolkit and pytorch installation for Ubuntu20 with GPU support
 
-# 1. Graphics Driver Installation:
-
-1. Make sure the ubuntu's package information is up-to-date using `sudo apt update` command, then install Nvidia Graphics Driver with following command.
-
-   `sudo apt install nvidia-driver-525-server`
-
-2. Reboot the system.
-
-## 1.1 CUDA Setup:
+# 1 CUDA Setup:
 
 1. Install CUDA=11.8 with these commands;
 
-   `wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin`
-
-   `sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600`
-
-   `wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda-repo-ubuntu2004-11-8-local_11.8.0-520.61.05-1_amd64.deb`
-
-   `sudo dpkg -i cuda-repo-ubuntu2004-11-8-local_11.8.0-520.61.05-1_amd64.deb`
-
-   `sudo cp /var/cuda-repo-ubuntu2004-11-8-local/cuda-*-keyring.gpg /usr/share/keyrings/`
-
-   `sudo apt update`
-
-   `sudo apt-y install cuda`
+   wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+   sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+   wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda-repo-ubuntu2004-11-6-local_11.6.0-510.39.01-1_amd64.deb
+   sudo dpkg -i cuda-repo-ubuntu2004-11-6-local_11.6.0-510.39.01-1_amd64.deb
+   sudo apt-key add /var/cuda-repo-ubuntu2004-11-6-local/7fa2af80.pub
+   sudo apt-get update
+   sudo apt-get -y install cuda
+   sudo reboot
 
 2. Reboot the system.
 
