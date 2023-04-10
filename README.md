@@ -2,7 +2,7 @@
 
 # 1 CUDA Setup:
 
-1. Install CUDA=11.6 with these commands;
+ Install CUDA=11.6 with these commands;
 
    `wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin`
    
