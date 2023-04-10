@@ -2,7 +2,7 @@
 
 # 1 CUDA Setup:
 
-1. Install CUDA=11.8 with these commands;
+1. Install CUDA=11.6 with these commands;
 
    `wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin`
    
@@ -22,7 +22,7 @@
 
 2. Reboot the system.
 
-## 1.2 cuDNN Installation:
+# 2 cuDNN Installation:
 
 1. Download cuDNN v8.7.0 for CUDA 11.x local installer (debian file) named as "Local Installer for Ubuntu20.04 x86_64 (Deb)" using link below; 
    
@@ -61,7 +61,7 @@
 
 10. Reboot the system.
 
-###1.2.1 Installation Verification for cuDNN
+# 3 Installation Verification for cuDNN
 
 1. Copy the cuDNN samples to a writable path.
 
@@ -91,7 +91,7 @@
    You can ignore any warnings appearing after this procedure and this validates the cuDNN installation.
 
 
-# 2. PyTorch Installation
+# 4. PyTorch Installation
 
 1. Go to this link https://pytorch.org/get-started/locally/ and select the options as follows;
 
@@ -109,7 +109,7 @@
 
 2. Reboot the system
 
-## 2.1 Verfiy PyTorch Installation:
+# 5 Verfiy PyTorch Installation:
 
    1. Open terminal and run `Python3` command.
 
